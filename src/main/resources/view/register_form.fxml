@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f7f1e3;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegisterFromController">
+   <children>
+      <ImageView fitHeight="309.0" fitWidth="448.0" layoutX="291.0" layoutY="-8.0" opacity="0.15" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logo.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="282.0" layoutY="305.0" onAction="#btnRegister" prefHeight="39.0" prefWidth="241.0" style="-fx-background-color: #34ace0;" text="Register" textFill="#fff2ec">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="314.0" layoutY="353.0" text="Already have an account?" textFill="#170b07" />
+      <Label layoutX="245.0" layoutY="22.0" text="Register" textFill="#170b07">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="447.0" layoutY="349.0" onAction="#btnLogin" text="Login" textFill="#34ace0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtFirstName" layoutX="163.0" layoutY="77.0" prefHeight="30.0" prefWidth="173.0" promptText="First name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXTextField>
+      <JFXComboBox fx:id="cmbTitle" layoutX="83.0" layoutY="82.0" promptText="Title" />
+      <JFXTextField fx:id="txtLastName" layoutX="349.0" layoutY="77.0" prefHeight="30.0" prefWidth="173.0" promptText="Last name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAddress" layoutX="83.0" layoutY="131.0" prefHeight="30.0" prefWidth="438.0" promptText="Address">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtEmail" layoutX="83.0" layoutY="183.0" prefHeight="30.0" prefWidth="438.0" promptText="Email">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="txtPassword1" layoutX="77.0" layoutY="238.0" prefHeight="30.0" prefWidth="205.0" promptText="Create password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXPasswordField fx:id="txtPassword2" layoutX="317.0" layoutY="250.0" prefHeight="30.0" prefWidth="205.0" promptText="Comfirm password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXPasswordField>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffda79" height="74.0" layoutX="75.0" layoutY="297.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="173.0" />
+      <Label layoutX="123.0" layoutY="313.0" text="Your role">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="374.0" layoutY="284.0" text="\@Owner" textFill="#ff5252">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXRadioButton layoutX="163.0" layoutY="345.0" onAction="#rbtnOwnar" text="Owner">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton layoutX="63.0" layoutY="345.0" onAction="#rbtnEmployee" text="Employee">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXRadioButton>
+   </children>
+</AnchorPane>

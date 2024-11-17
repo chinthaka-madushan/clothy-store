@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f7f1e3;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="498.0" fitWidth="448.0" layoutX="153.0" layoutY="-54.0" opacity="0.07" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logo.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtEmail" layoutX="118.0" layoutY="122.0" prefHeight="39.0" prefWidth="373.0" promptText="email@gmail.com">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <JFXButton layoutX="181.0" layoutY="286.0" onAction="#btnLogin" prefHeight="39.0" prefWidth="241.0" style="-fx-background-color: #34ace0;" text="Log in" textFill="#fff2ec">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="129.0" layoutY="105.0" text="Email" textFill="#170b07" />
+      <Label layoutX="129.0" layoutY="179.0" text="Password" textFill="#170b07" />
+      <PasswordField fx:id="txtPassword" layoutX="118.0" layoutY="196.0" prefHeight="39.0" prefWidth="373.0" promptText="*****">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </PasswordField>
+      <Label layoutX="213.0" layoutY="344.0" text="Don't have an account?" textFill="#170b07" />
+      <Label layoutX="269.0" layoutY="44.0" text="Login" textFill="#170b07">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="246.0" layoutY="248.0" onAction="#btnForgetPassword" text="Forget password" textFill="#34ace0" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="333.0" layoutY="340.0" onAction="#btnRegister" text="Register" textFill="#34ace0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
